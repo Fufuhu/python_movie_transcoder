@@ -1,7 +1,7 @@
 import sys
-from ffmpeg.image_file import ImageFile
-from ffmpeg.options import  ImageFileOptions
-from ffmpeg.manipulater import FFmpegManipulater
+from python_movie_transformer.ffmpeg.image_file import ImageFile
+from python_movie_transformer.ffmpeg.options import  ImageFileOptions
+from python_movie_transformer.ffmpeg.manipulater import FFmpegManipulater
 
 
 in_file = sys.argv[1]
