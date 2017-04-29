@@ -12,9 +12,7 @@ logger.addHandler(handler)
 class FFmpegManipulater:
     def __init__(self, input_file, output_file):
         self.__input_file = input_file
-        logger.debug(self.__input_file.file_name)
-        self.__output_file = output_file
-
+        self.__output_file = output_file 
     def manipulate(self):
 
         input_file_name = self.__input_file.file_name
@@ -28,7 +26,7 @@ class FFmpegManipulater:
 
         ff = ffmpy.FFmpeg(
            inputs={input_file_name: input_options},
-           outputs={output_file_name: output_options}
+           outputs={output_file_name: '-strict -2 ' + output_options}
         )
 
 
